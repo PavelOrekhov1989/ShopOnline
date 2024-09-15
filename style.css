@@ -1,9 +1,27 @@
+@font-face {
+    font-family: "lato";
+    src: local("Lato"), url(/font/lato-regular.woff2) format("woff2"),
+        url(/font/lato-regular.woff) format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "lato-bold";
+    src: local("Lato-Bold"), local("Lato Bold") url(/font/lato-bold.woff2) format("woff2"),
+        url(/font/lato-bold.woff) format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: lato, sans-serif;
+    font-weight: 400;
     color: #2d2d2d;
 }
 
 h1 {
+    font-family: lato-bold;
     font-weight: 700;
     font-size: 50px;
     line-height: 1.3;
@@ -11,7 +29,6 @@ h1 {
 }
 
 p {
-    font-weight: 400;
     font-size: 22px;
     line-height: 1.5;
 }
@@ -32,7 +49,6 @@ p {
 }
 
 .item1 {
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.3;
     color: inherit;
@@ -40,7 +56,6 @@ p {
 }
 
 .item2 {
-    font-weight: 400;
     font-size: 22px;
     line-height: 1.5;
     color: #000;
