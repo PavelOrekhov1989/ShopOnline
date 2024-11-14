@@ -1,0 +1,130 @@
+:root {
+    position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    --1: #fff;
+    --2: #3670c7;
+    --3: #2d2d2d;
+    --4: #8f8f8f;
+    --5: #525252;
+    --6: #f00;
+    --6: #e8e8e8;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+}
+
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-height: 100%;
+}
+
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+
+/*
+Пример контейнера
+
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+
+.container {
+    max-width: 1920px;
+    padding: 0 75px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 42px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+        padding: 0 34px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .container {
+        max-width: 1920px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+}
