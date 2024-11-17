@@ -1,7 +1,7 @@
 .container__navigation {
     padding-top: 27px;
     display: grid;
-    grid-template-columns: 190px 151px 757px 354px;
+    grid-template-columns: minmax(100px, 190px) minmax(100px, 151px) 757px minmax(100px, 354px);
     justify-content: space-between;
     margin-bottom: 90px;
 }
@@ -12,12 +12,13 @@
 }
 
 .container__logo {
+
     align-self: center;
 }
 
 .container__menu {
     border-radius: 10px;
-    width: 151px;
+    max-width: 151px;
     height: 54px;
     background-color: var(--2);
     font-weight: 400;
@@ -27,7 +28,7 @@
 }
 
 .container__search-wrap {
-    max-width: 757px;
+    width: 757px;
     position: relative;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .container__search {
-    width: 100%;
+    width: 757px;
     height: 54px;
     padding-left: 40px;
     border-radius: 30px;
